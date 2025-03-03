@@ -12,15 +12,11 @@ body{
     background-color: #171717;
 }
 #drone-container {
-    width: 90vw; /* Responsive width */
-    height: 60vh; /* Responsive height */
-    position: absolute; /* Correct positioning */
-    top: 10%;  
-    left: 50%;
-    transform: translateX(-50%); /* Center horizontally */
-    
-    max-width: 800px; /* Limit max size on large screens */
-    max-height: 600px; 
+    width: 800px;  /* Adjust size */
+    height: 650px; /* Adjust size */
+    position: flex;
+    top: 150px;  /* Move down */
+    left: 0px; /* Move right */
 }
 
 /* Media query for smaller screens */
