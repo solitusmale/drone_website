@@ -202,6 +202,84 @@ h2 {
     
 }
 
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .B_img, .B_img_text {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .B_img img {
+        width: 80%;
+    }
+
+    .drone2 {
+        width: 30%;
+        margin-bottom: 15vh;
+        margin-left: 0;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .superhead {
+        font-size: 1rem;
+    }
+
+    .team {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center;
+    }
+
+    #getstarted {
+        font-size: 1rem;
+        padding: 12px 30px;
+        display: block;
+        margin: 10px auto;
+    }
+
+    .subheadline {
+        font-size: 0.8em;
+        text-align: center;
+    }
+}
+
+/* Extra Small Devices (Phones) */
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.2em;
+    }
+
+    .B_img img {
+        width: 100%;
+    }
+
+    .drone2 {
+        display: none;
+        /* width: 40%;
+        margin-bottom: 10vh; */
+    }
+
+    .superhead {
+        margin-top: 1.5em;
+        font-size: 0.9rem;
+    }
+
+    #getstarted {
+        font-size: 0.9rem;
+        padding: 10px 25px;
+    }
+
+    .subheadline {
+        font-size: 0.7em;
+    }
+}
+
 .line{
     display: flex;
     align-items: center;
@@ -447,11 +525,11 @@ h2 {
     bottom: 8%;
 }
 iframe {
-    margin-top: 10vh;
+    margin-top: 3.5em;
     width: 97vw;
 }
 .vus {
-    margin-top: 7%;
+    margin-top: 1em;
 }
 @media only screen and (max-width:940px){
     .navbar-items{
