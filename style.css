@@ -117,7 +117,69 @@ canvas { display: block; }
     justify-content: center;
     align-items: center;
     height: 85vh;
+    
 }
+.video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.6; /* Adjust opacity for the overlay */
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%);
+}
+h2 {
+    font-size: 1.8em;
+    
+}
+.B_img {
+    width: 50%;
+    margin-left: 10vw;
+}
+.B_img img {
+    width: 90%;
+}
+.B_img_text {
+    width: 50%;
+    
+}
+.drone2 {
+    width: 15%;
+    margin-bottom: 25vh;
+    margin-left: -10%;
+}
+.superhead {
+    font-size: .8rem;
+    margin-bottom: .5em;
+}
+.team {
+    display: flex;
+    width: 85%;
+    margin: 0 auto;
+    align-items: center;
+}
+#getstarted {
+    padding: 10px 25px;
+    border-radius: 25px;
+    background-color: #fa5b13;
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: .8rem;
+}
+
+.subheadline {
+    font-family: "Merriweather";
+    font-size: 0.5em;
+    margin-top: .5em;
+    line-height: 1.8em;
+    opacity: .8;
+    font-weight: 200;
+    
+}
+
 .line{
     display: flex;
     align-items: center;
@@ -361,6 +423,13 @@ canvas { display: block; }
 }
 .top.show{
     bottom: 8%;
+}
+iframe {
+    margin-top: 10vh;
+    width: 97vw;
+}
+.vus {
+    margin-top: 7%;
 }
 @media only screen and (max-width:940px){
     .navbar-items{
