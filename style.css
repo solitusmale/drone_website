@@ -12,13 +12,34 @@ body{
     background-color: #171717;
 }
 #drone-container {
-    width: 800px;  /* Adjust size */
-    height: 600px; /* Adjust size */
-    position: flex;
-    top: 0px;  /* Move down */
-    left: 0px; /* Move right */
-    /* border: 1px solid red; /* Temporary border for visualization */
-} */
+    width: 90vw; /* Responsive width */
+    height: 60vh; /* Responsive height */
+    position: absolute; /* Correct positioning */
+    top: 10%;  
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    
+    max-width: 800px; /* Limit max size on large screens */
+    max-height: 600px; 
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    #drone-container {
+        width: 95vw;  /* Increase width for small screens */
+        height: 50vh; /* Adjust height */
+        bottom: 10vh; /* Move it down */
+    }
+}
+
+@media (max-width: 480px) {
+    #drone-container {
+        width: 100vw;  /* Full width */
+        height: 40vh; /* Reduce height for small screens */
+        bottom: 15vh; /* Move further down */
+    }
+}
+
 
 canvas { display: block; }
 .navbar{
@@ -160,6 +181,7 @@ h2 {
     width: 85%;
     margin: 0 auto;
     align-items: center;
+    margin-top: 4vh;
 }
 #getstarted {
     padding: 10px 25px;
@@ -168,6 +190,10 @@ h2 {
     color: #fff;
     letter-spacing: 2px;
     font-size: .8rem;
+}
+#getstarted:hover {
+    background-color: #fff;
+    color: #fa5b13;
 }
 
 .subheadline {
